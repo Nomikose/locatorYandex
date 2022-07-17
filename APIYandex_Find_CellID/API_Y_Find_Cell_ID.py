@@ -15,7 +15,8 @@ cur.execute("""CREATE TABLE IF NOT EXISTS cid_table(
    lac INT NOT NULL,
    latitude REAL NOT NULL,
    longitude REAL NOT NULL,
-   precision REAL NOT NULL);
+   precision REAL NOT NULL,
+   CONSTRAINT unq UNIQUE (operator, cellid, lac));
 """)
 conn.commit()
 
