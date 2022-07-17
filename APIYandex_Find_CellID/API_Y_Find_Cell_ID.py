@@ -27,7 +27,7 @@ CountryCode = 250
 operator = 2
 lac = 7830
 
-for cid in range(200064513, 200064515):
+for cid in range(200064513, 200064516):
     time.sleep(0.001)
     print("CID=" + str(cid))
     data = {
